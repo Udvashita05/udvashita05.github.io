@@ -20,4 +20,3 @@ Upload the contents of `dist/` to any static web host. For hosts that build from
 - `assets/`: profile picture and background texture.
 
 Projects are intentionally empty. Social profile URLs are not configured yet. Add them to `socialProfiles` before sharing if you want active social links. Google Fonts needs an internet connection; local fallback fonts are provided.
-

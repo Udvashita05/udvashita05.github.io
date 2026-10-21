@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Udvashita's Retro Desktop Portfolio</title>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&amp;family=Fredoka:wght@400;600;700&amp;family=Quicksand:wght@600;700;800&amp;family=VT323&amp;display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="styles.css"/>
+<script>try{if(localStorage.getItem("portfolio-theme")==="dark")document.documentElement.dataset.theme="dark"}catch{}</script>
+<meta name="description" content="Udvashita Banerjee — Full-Stack Software Engineer, B.Tech undergraduate, and open source enthusiast. Explore my retro desktop portfolio."/>
+<style data-purpose="desktop-grid-background">
+    /* Subtle grid background matching retro pixel OS canvas */
+    .retro-grid-bg {
+      background-color: #fae4e6;
+      background-image: 
+        linear-gradient(to right, rgba(61, 34, 56, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(61, 34, 56, 0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+  </style>
+<style data-purpose="component-borders-and-accents">
+    .border-retro {
+      border: 3.5px solid #3d2238;
+    }
+    .border-retro-thin {
+      border: 2px solid #3d2238;
+    }
+    /* Pixelated corner brackets for browser frame interior */
+    .retro-corner-tl {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      width: 14px;
+      height: 14px;
+      border-top: 4px solid #3d2238;
+      border-left: 4px solid #3d2238;
+      border-top-left-radius: 4px;
+    }
+    .retro-corner-br {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      width: 14px;
+      height: 14px;
+      border-bottom: 4px solid #3d2238;
+      border-right: 4px solid #3d2238;
+      border-bottom-right-radius: 4px;
+    }
+    /* Sparkle icon rotation animation on hover */
+    .sparkle-cross {
+      user-select: none;
+      transition: transform 0.25s ease;
+    }
+    .sparkle-cross:hover {
+      transform: scale(1.3) rotate(45deg);
+    }
+  </style>
+</head>
+<body class="retro-grid-bg min-h-screen text-[#3d2238] font-cute flex flex-col justify-between selection:bg-[#d6c5e8] selection:text-[#3d2238] overflow-x-hidden">
+<main class="flex-grow flex items-center justify-center p-3 sm:p-6 lg:p-8 relative">
+<div class="absolute top-12 left-10 text-retro-border text-xl font-bold opacity-60 pointer-events-none sparkle-cross">✦</div>
+<div class="absolute top-28 left-48 text-retro-border text-sm font-bold opacity-40 pointer-events-none sparkle-cross">✕</div>
+<div class="absolute bottom-24 left-24 text-retro-border text-lg font-bold opacity-50 pointer-events-none sparkle-cross">✦</div>
+<div class="absolute top-16 right-20 text-retro-border text-xl font-bold opacity-50 pointer-events-none sparkle-cross">✦</div>
+<div class="absolute top-44 right-56 text-retro-border text-xs font-bold opacity-40 pointer-events-none sparkle-cross">✕</div>
+<div class="absolute bottom-32 right-16 text-retro-border text-lg font-bold opacity-60 pointer-events-none sparkle-cross">✦</div>
+<div class="w-full max-w-[1300px] desktop-workspace flex flex-col lg:flex-row items-center justify-between gap-6 relative z-10">
+<aside class="hidden md:flex flex-row lg:flex-col items-center justify-center gap-7 w-full lg:w-36 shrink-0 order-2 lg:order-1" data-purpose="left-desktop-icons">
+<a class="group flex flex-col items-center text-center cursor-pointer" href="#projects">
+<div class="w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-2xl bg-[#fee4e2] border-retro flex items-center justify-center shadow-retro-offset-sm group-hover:-translate-y-1 group-active:translate-y-0 transition-transform relative">
+<span class="absolute -top-1.5 -left-1.5 text-xs text-retro-border font-bold">✦</span>
+<div class="w-8 h-8 rounded-md border-retro-thin bg-[#fca5a5] flex items-center justify-center rotate-45 group-hover:rotate-90 transition-transform">
+<span class="text-xs text-[#3d2238] font-bold -rotate-45">♥</span>
+</div>
+</div>
+<span class="mt-2 text-[11px] sm:text-xs font-bold tracking-wider uppercase text-retro-border leading-tight max-w-[85px]">
+            PROJECTS<br/><span class="text-[9px] opacity-75 font-body">SHOWCASE</span>
+</span>
+</a>
+<a class="group flex flex-col items-center text-center cursor-pointer" href="#skills">
+<div class="w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full bg-retro-purple-light border-retro flex items-center justify-center shadow-retro-offset-sm group-hover:-translate-y-1 group-active:translate-y-0 transition-transform">
+<svg class="w-8 h-8 text-retro-border" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+<path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+<path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+<line stroke-width="4" x1="12" x2="12.01" y1="20" y2="20"></line>
+</svg>
+</div>
+<span class="mt-2 text-[11px] sm:text-xs font-bold tracking-wider uppercase text-retro-border leading-tight max-w-[85px]">
+            TECH STACK<br/><span class="text-[9px] opacity-75 font-body">&amp; SKILLS</span>
+</span>
+</a>
+<a class="group flex flex-col items-center text-center cursor-pointer" href="#experience">
+<div class="w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-2xl bg-[#fed9c9] border-retro flex items-center justify-center shadow-retro-offset-sm group-hover:-translate-y-1 group-active:translate-y-0 transition-transform relative">
+<span class="absolute -top-1 -right-1 text-xs text-retro-border font-bold">✕</span>
+<div class="w-8 h-8 rounded-full border-retro-thin bg-[#f4a261] relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 bg-[#fde2e4] clip-path-wedge" style="clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%);"></div>
+<div class="w-4 h-4 bg-retro-purple-light border-retro-thin rounded-sm z-10 flex items-center justify-center text-[8px]">♥</div>
+</div>
+</div>
+<span class="mt-2 text-[11px] sm:text-xs font-bold tracking-wider uppercase text-retro-border leading-tight max-w-[95px]">
+            EXPERIENCE<br/><span class="text-[9px] opacity-75 font-body">&amp; TIMELINE</span>
+</span>
+</a>
+</aside>
+<section class="w-full max-w-4xl bg-retro-cream rounded-[28px] border-retro shadow-retro-offset-lg overflow-hidden order-1 lg:order-2 flex flex-col transition-all" data-purpose="central-browser-window">
+<header class="bg-retro-purple px-4 py-2.5 border-b-[3.5px] border-retro flex items-center justify-between gap-3 select-none">
+<div class="flex items-center gap-2 overflow-x-hidden">
+<div class="p-1 text-retro-border hidden sm:block">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M12 22V12m0 0c0-4 3-7 7-7 0 4-3 7-7 7zm0 0c0-4-3-7-7-7 0 4 3 7 7 7z" fill="none" stroke="#3d2238" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<div class="flex items-center gap-2 bg-[#fad2cf] border-retro-thin px-3 sm:px-4 py-1 rounded-xl shadow-sm text-retro-border font-cute text-sm font-semibold tracking-wide">
+<svg class="chibi-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 25C2 9 10 3 20 4c12-1 18 8 15 23l-5 6H10z" fill="#eeadc6" stroke="currentColor" stroke-width="2"/><ellipse cx="20" cy="23" rx="12" ry="11" fill="#ffe3d3" stroke="currentColor" stroke-width="2"/><path d="M7 19 12 9l8-2 10 5 3 9-8-5-2-6-4 9-2-6-5 7z" fill="#eeadc6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><ellipse cx="15" cy="23" rx="2" ry="3" fill="#584064"/><ellipse cx="25" cy="23" rx="2" ry="3" fill="#584064"/><circle cx="11" cy="27" r="2.5" fill="#f5a1b6"/><circle cx="29" cy="27" r="2.5" fill="#f5a1b6"/><path d="M17 29q3 4 6 0" stroke="#744452" stroke-width="1.5" stroke-linecap="round"/><path d="m29 6 5-3v8l-5-3-5 3V3z" fill="#b499cb" stroke="currentColor" stroke-width="1.5"/></svg>
+<span>udvashita.dev</span>
+<button aria-label="Close Tab" class="ml-1 text-xs hover:bg-[#3d2238] hover:text-white rounded px-1 transition-colors leading-none">✕</button>
+</div>
+<button aria-label="New Tab" class="w-6 h-6 rounded-lg border-retro-thin bg-[#e6d7f4] flex items-center justify-center font-bold text-sm text-retro-border hover:bg-white transition">
+              +
+            </button>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<button aria-label="Minimize Window" class="w-6 h-6 rounded-md border-retro-thin bg-[#fffaf6] hover:bg-[#fee4e2] flex items-center justify-center font-bold text-xs">
+              —
+            </button>
+<button aria-label="Maximize Window" class="w-6 h-6 rounded-md border-retro-thin bg-[#fffaf6] hover:bg-[#fee4e2] flex items-center justify-center text-xs">
+<span class="w-2.5 h-2.5 border-2 border-retro"></span>
+</button>
+<button aria-label="Close Window" class="w-6 h-6 rounded-md border-retro-thin bg-[#fda4af] hover:bg-red-400 flex items-center justify-center font-bold text-xs">
+              ✕
+            </button>
+</div>
+</header>
+<div class="bg-retro-pink px-3 sm:px-5 py-2.5 border-b-[3.5px] border-retro flex items-center gap-2 sm:gap-3">
+<div class="flex items-center gap-1.5 shrink-0 text-retro-border font-bold">
+<button aria-label="Go Back" class="w-7 h-7 rounded-lg border-retro-thin bg-retro-cream hover:bg-white flex items-center justify-center text-xs">←</button>
+<button aria-label="Go Forward" class="w-7 h-7 rounded-lg border-retro-thin bg-retro-cream hover:bg-white flex items-center justify-center text-xs">→</button>
+<button aria-label="Refresh Page" class="w-7 h-7 rounded-lg border-retro-thin bg-retro-cream hover:bg-white flex items-center justify-center text-xs">⟳</button>
+</div>
+<div class="flex-grow flex items-center bg-retro-cream border-retro-thin rounded-full px-3 sm:px-4 py-1 text-xs sm:text-sm font-semibold tracking-wider text-retro-border overflow-hidden shadow-inner">
+<span class="opacity-75 font-mono mr-1">HTTPS://</span>
+<span class="font-bold tracking-wider">UDVASHITA.BANERJEE/PORTFOLIO</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<button aria-label="Bookmark" class="w-7 h-7 rounded-lg border-retro-thin bg-retro-cream hover:bg-white flex items-center justify-center text-sm">
+              ★
+            </button>
+<button aria-label="Menu Options" class="w-7 h-7 rounded-lg border-retro-thin bg-retro-cream hover:bg-white flex items-center justify-center text-sm flex-col gap-[2px] p-1.5">
+<span class="w-full h-0.5 bg-retro-border rounded-full"></span>
+<span class="w-full h-0.5 bg-retro-border rounded-full"></span>
+<span class="w-full h-0.5 bg-retro-border rounded-full"></span>
+</button>
+</div>
+</div>
+<div class="window-scroll p-5 sm:p-8 lg:p-10 relative flex flex-col justify-between min-h-[380px] sm:min-h-[440px] bg-retro-cream">
+<div class="retro-corner-tl pointer-events-none"></div>
+<div class="retro-corner-br pointer-events-none"></div>
+<nav class="flex justify-end items-center gap-4 sm:gap-6 text-xs sm:text-sm font-bold uppercase tracking-widest text-retro-border select-none" data-purpose="inner-web-nav">
+<a class="hover:text-pink-600 transition-colors" href="#about">ABOUT</a>
+<a class="hover:text-pink-600 transition-colors" href="#projects">PROJECTS</a>
+<a class="hover:text-pink-600 transition-colors" href="#skills">SKILLS</a>
+<a class="hover:text-pink-600 transition-colors" href="#contact">CONTACT</a>
+<span class="chibi-greeting" role="img" aria-label="Chibi girl" title="Sweet greetings!"><svg class="chibi-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 25C2 9 10 3 20 4c12-1 18 8 15 23l-5 6H10z" fill="#eeadc6" stroke="currentColor" stroke-width="2"/><ellipse cx="20" cy="23" rx="12" ry="11" fill="#ffe3d3" stroke="currentColor" stroke-width="2"/><path d="M7 19 12 9l8-2 10 5 3 9-8-5-2-6-4 9-2-6-5 7z" fill="#eeadc6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><ellipse cx="15" cy="23" rx="2" ry="3" fill="#584064"/><ellipse cx="25" cy="23" rx="2" ry="3" fill="#584064"/><circle cx="11" cy="27" r="2.5" fill="#f5a1b6"/><circle cx="29" cy="27" r="2.5" fill="#f5a1b6"/><path d="M17 29q3 4 6 0" stroke="#744452" stroke-width="1.5" stroke-linecap="round"/><path d="m29 6 5-3v8l-5-3-5 3V3z" fill="#b499cb" stroke="currentColor" stroke-width="1.5"/></svg></span>
+</nav>
+<div class="hero-intro my-auto py-6 sm:py-8 flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-10">
+<div class="hero-doodles" aria-hidden="true">
+<span style="--x:2%;--y:2%;--r:-18deg" class="doodle-ub">ub</span>
+<span style="--x:24%;--y:0%;--r:12deg">✧</span>
+<span style="--x:79%;--y:4%;--r:15deg" class="doodle-ub">ub</span>
+<span style="--x:94%;--y:15%;--r:16deg">🎀</span>
+<span style="--x:0%;--y:62%;--r:-14deg">🌷</span>
+<span style="--x:21%;--y:70%;--r:15deg">♡</span>
+<span style="--x:9%;--y:93%;--r:-12deg" class="doodle-ub">ub</span>
+<span style="--x:30%;--y:94%;--r:10deg">✧</span>
+<span style="--x:87%;--y:87%;--r:-14deg" class="doodle-ub">ub</span>
+<span style="--x:96%;--y:58%;--r:10deg">🦋</span>
+<span style="--x:66%;--y:99%;--r:-10deg">⋆</span>
+<span style="--x:3%;--y:38%;--r:10deg">✦</span>
+</div>
+<div class="w-36 h-36 sm:w-44 sm:h-44 rounded-full border-retro bg-retro-purple-light shrink-0 relative overflow-hidden shadow-retro-offset-sm flex items-center justify-center p-2 group cursor-pointer" data-purpose="retro-planet-avatar">
+<div class="profile-photo"><img src="assets/profile.jpeg" alt="Pink-haired chibi girl beside her cat at the seaside" width="736" height="736" fetchpriority="high"/></div>
+</div>
+<div class="flex flex-col items-center md:items-start text-center md:text-left w-full max-w-lg">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-sm sm:text-base text-[#f43f5e]">♥</span>
+<h1 class="hero-name text-retro-border">
+                  <span>Udvashita</span><span>Banerjee</span>
+                </h1>
+<span class="text-sm sm:text-base text-[#f43f5e]">♥</span>
+</div>
+<p class="text-xs sm:text-sm font-semibold text-retro-border opacity-90 mb-4 tracking-wide font-body">
+                Full-Stack Software Engineer • B.Tech Undergrad • Open Source
+              </p>
+<p class="hero-description">Hello everyone! I’m Udvashita Banerjee, a full-stack web developer who loves learning, exploring new technologies, and bringing ideas to life. I’m always curious, always building, and excited to grow one project at a time.</p>
+<div class="w-full flex items-center gap-2">
+<div class="relative flex-grow flex items-center bg-retro-cream rounded-full border-retro px-3.5 py-1.5 sm:py-2 shadow-sm focus-within:ring-2 focus-within:ring-retro-purple">
+<span class="text-xs sm:text-sm mr-2 opacity-75 text-retro-border font-bold">🔍</span>
+<input class="w-full bg-transparent border-none p-0 text-xs sm:text-sm text-retro-border font-body placeholder:text-[#3d2238]/50 focus:ring-0 focus:outline-none" id="portfolio-search" placeholder="Search projects, skills, or achievements..." type="text" value="B.Tech Full Stack Developer"/>
+<div class="flex items-center gap-1.5 ml-2 text-retro-border opacity-70">
+<button aria-label="Clear Search Input" class="text-xs hover:opacity-100 font-bold">✕</button>
+<span class="text-xs">🎤</span>
+</div>
+</div>
+<button class="rounded-full bg-retro-purple hover:bg-retro-purple-dark text-retro-border px-4 sm:px-6 py-1.5 sm:py-2 border-retro font-bold text-xs sm:text-sm uppercase tracking-wider shadow-retro-offset-sm active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all shrink-0" id="search-btn">
+                  EXPLORE
+                </button>
+</div>
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-1.5 sm:gap-2 mt-4 text-[11px] font-bold text-retro-border">
+<span class="text-[10px] opacity-70 mr-1">STACK:</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#fde2e4] border-retro-thin hover:scale-105 transition-transform cursor-pointer">React</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#e8dff5] border-retro-thin hover:scale-105 transition-transform cursor-pointer">Node.js</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#fcf4dd] border-retro-thin hover:scale-105 transition-transform cursor-pointer">TypeScript</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#ddedea] border-retro-thin hover:scale-105 transition-transform cursor-pointer">Python</span>
+</div>
+<div class="hero-tools" aria-label="Tools I know"><span class="tools-label">TOOLS:</span><span>Linux</span><span>Git</span><span>GitHub</span><span>Codex</span><span>Claude</span></div>
+</div>
+</div>
+<div id="homepage-sections" class="homepage-sections"></div>
+<footer class="pt-4 border-t border-retro/15 flex flex-col sm:flex-row items-center justify-between text-[11px] font-semibold text-retro-border/80 tracking-wide">
+<span>© <span id="copyright-year">2026</span> Udvashita Banerjee • Built with Love &amp; Retro Nostalgia</span>
+<span class="flex items-center gap-1 mt-1 sm:mt-0">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Available for Internships &amp; Full-Time Roles
+            </span>
+</footer>
+</div>
+</section>
+<aside class="hidden md:flex flex-row lg:flex-col items-center justify-center gap-7 w-full lg:w-36 shrink-0 order-3" data-purpose="right-desktop-icons">
+<a class="group flex flex-col items-center text-center cursor-pointer" href="#education">
+<div class="w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-2xl bg-[#fee4e2] border-retro flex items-center justify-center shadow-retro-offset-sm group-hover:-translate-y-1 group-active:translate-y-0 transition-transform relative">
+<span class="absolute -top-1.5 -left-1 text-xs text-retro-border font-bold">✦</span>
+<div class="w-9 h-7 rounded-md border-retro-thin bg-retro-purple-light flex flex-col items-center justify-center p-1">
+<div class="w-6 h-3 bg-retro-cream rounded-sm border-retro-thin"></div>
+<div class="w-4 h-0.5 bg-retro-border mt-0.5 rounded"></div>
+</div>
+</div>
+<span class="mt-2 text-[11px] sm:text-xs font-bold tracking-wider uppercase text-retro-border leading-tight max-w-[85px]">
+            EDUCATION<br/><span class="text-[9px] opacity-75 font-body">B.TECH IT</span>
+</span>
+</a>
+<a class="group flex flex-col items-center text-center cursor-pointer" href="#hobbies">
+<div class="w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full bg-[#fde2e4] border-retro flex items-center justify-center shadow-retro-offset-sm group-hover:-translate-y-1 group-active:translate-y-0 transition-transform relative">
+<span class="absolute -top-1 -right-1 text-xs text-retro-border font-bold">✕</span>
+<div class="relative flex items-center justify-center">
+<span class="text-xs font-bold absolute -top-2 -left-1 text-retro-border">♪</span>
+<span class="text-[10px] font-bold absolute -top-2.5 right-0 text-retro-border">♫</span>
+<svg class="w-8 h-8 text-retro-border" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" viewbox="0 0 24 24">
+<path d="M3 14v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2H4a1 1 0 0 0-1 1v4z" fill="#fca5a5"></path>
+<path d="M21 14v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h1a1 1 0 0 1 1 1v4z" fill="#fca5a5"></path>
+<path d="M4 14v-3a8 8 0 0 1 16 0v3"></path>
+</svg>
+</div>
+</div>
+<span class="mt-2 text-[11px] sm:text-xs font-bold tracking-wider uppercase text-retro-border leading-tight max-w-[85px]">
+            CREATIVE<br/><span class="text-[9px] opacity-75 font-body">&amp; HOBBIES</span>
+</span>
+</a>
+<a class="group flex flex-col items-center text-center cursor-pointer" href="#contact">
+<div class="w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-2xl bg-retro-purple-light border-retro flex items-center justify-center shadow-retro-offset-sm group-hover:-translate-y-1 group-active:translate-y-0 transition-transform relative">
+<span class="absolute -bottom-1 -left-1 text-xs text-retro-border font-bold">✦</span>
+<div class="w-9 h-6 rounded-md border-retro-thin bg-retro-cream flex items-center justify-center relative overflow-hidden">
+<div class="absolute top-0 inset-x-0 h-3 border-b border-retro-thin bg-[#fed9c9]" style="clip-path: polygon(0 0, 50% 100%, 100% 0);"></div>
+<span class="text-[8px] text-[#fb7185] font-bold z-10 pt-1">♥</span>
+</div>
+</div>
+<span class="mt-2 text-[11px] sm:text-xs font-bold tracking-wider uppercase text-retro-border leading-tight max-w-[85px]">
+            GET IN TOUCH<br/><span class="text-[9px] opacity-75 font-body">INBOX ME</span>
+</span>
+</a>
+</aside>
+</div>
+</main>
+<footer class="w-full bg-retro-purple border-t-[3.5px] border-retro py-2 px-3 sm:px-6 flex items-center justify-between gap-3 select-none relative z-20" data-purpose="retro-system-taskbar">
+<div class="flex items-center gap-2 sm:gap-3 flex-grow sm:flex-grow-0">
+<button aria-label="Open Desktop Menu" class="w-9 h-8 rounded-lg border-retro-thin bg-retro-cream hover:bg-white flex flex-col justify-center items-center gap-1 px-1.5 shadow-sm active:translate-y-0.5">
+<span class="w-full h-0.5 bg-retro-border rounded"></span>
+<span class="w-full h-0.5 bg-retro-border rounded"></span>
+<span class="w-full h-0.5 bg-retro-border rounded"></span>
+</button>
+<div class="flex items-center bg-retro-cream border-retro-thin rounded-full px-3 py-1 shadow-inner max-w-xs sm:w-64 text-xs font-cute text-retro-border">
+<span class="text-[11px] mr-1.5 text-retro-border font-bold">★</span>
+<input class="w-full bg-transparent border-none p-0 text-xs text-retro-border font-cute placeholder:text-[#3d2238]/60 focus:ring-0 focus:outline-none" placeholder="search for portfolio docs..." type="text"/>
+</div>
+<div class="hidden md:flex items-center gap-1.5">
+<div class="w-4 h-4 rounded border-retro-thin bg-[#fed9c9]" title="App Window 1"></div>
+<div class="w-4 h-4 rounded border-retro-thin bg-retro-cream" title="App Window 2"></div>
+</div>
+</div>
+<div class="flex items-center gap-3 sm:gap-5 text-retro-border font-cute text-xs sm:text-sm font-bold">
+<button id="theme-toggle" type="button" class="theme-toggle" aria-label="Switch to dark baby pink theme" aria-pressed="false"><span aria-hidden="true" class="theme-icon">☾</span><span class="theme-label">Baby pink</span><span class="toggle-track" aria-hidden="true"><span></span></span></button>
+<span class="hidden sm:inline text-xs cursor-pointer opacity-80 hover:opacity-100">▲</span>
+<div class="tracking-widest hidden sm:inline-block uppercase font-bold text-xs bg-retro-cream/50 px-2 py-0.5 rounded border-retro-thin">
+        STATUS : ONLINE
+      </div>
+<span class="h-5 w-0.5 bg-retro-border/60"></span>
+<div class="flex flex-col text-right leading-none">
+<span class="text-xs sm:text-sm font-pixel font-bold tracking-wider" id="retro-clock">23:00 PM</span>
+<span class="text-[9px] font-pixel text-retro-border/80" id="retro-date">07/08/2025</span>
+</div>
+<button aria-label="Desktop Pet" class="w-8 h-8 rounded-full border-retro-thin bg-[#fed9c9] hover:bg-[#fca5a5] flex items-center justify-center shadow-sm transition-transform hover:scale-110 active:scale-95">
+<svg class="chibi-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 25C2 9 10 3 20 4c12-1 18 8 15 23l-5 6H10z" fill="#eeadc6" stroke="currentColor" stroke-width="2"/><ellipse cx="20" cy="23" rx="12" ry="11" fill="#ffe3d3" stroke="currentColor" stroke-width="2"/><path d="M7 19 12 9l8-2 10 5 3 9-8-5-2-6-4 9-2-6-5 7z" fill="#eeadc6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><ellipse cx="15" cy="23" rx="2" ry="3" fill="#584064"/><ellipse cx="25" cy="23" rx="2" ry="3" fill="#584064"/><circle cx="11" cy="27" r="2.5" fill="#f5a1b6"/><circle cx="29" cy="27" r="2.5" fill="#f5a1b6"/><path d="M17 29q3 4 6 0" stroke="#744452" stroke-width="1.5" stroke-linecap="round"/><path d="m29 6 5-3v8l-5-3-5 3V3z" fill="#b499cb" stroke="currentColor" stroke-width="1.5"/></svg>
+</button>
+</div>
+</footer>
+<script src="app.js" defer></script>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+</body></html>
