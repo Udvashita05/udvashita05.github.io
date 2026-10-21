@@ -31,11 +31,11 @@ const sections = {
   hobbies: { title: 'creative.space', heading: 'Beyond the code ♪', text: 'A space for the creative side of my world.' },
   contact: { title: 'inbox.mail', heading: 'Let’s build something together ♡', text: 'Available for internships & full-time roles.', socials: true }
 };
-// Set profile URLs here to make them available to every portfolio visitor.
+// Social profile links shown in the Contact section.
 const socialProfiles = [
-  { name: 'LinkedIn', host: 'linkedin.com', url: '' },
-  { name: 'GitHub', host: 'github.com', url: '' },
-  { name: 'Twitter / X', host: 'x.com', url: '' }
+  { name: 'LinkedIn', host: 'linkedin.com', url: 'https://www.linkedin.com/in/udvashita-banerjee-5b855630b', icon: 'M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.43v6.31ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z' },
+  { name: 'GitHub', host: 'github.com', url: 'https://github.com/Udvashita05', icon: 'M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.82 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.47 11.47 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.13 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.38.81 1.1.81 2.22v3.13c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z' },
+  { name: 'X (Twitter)', host: 'x.com', url: 'https://x.com/UdvashitaB', icon: 'M18.9 2H22l-6.78 7.75L23.2 22h-6.25l-4.9-8.08L4.98 22H1.85l7.25-8.29L1.4 2h6.4l4.43 7.37L18.9 2Zm-1.1 17.9h1.73L6.88 3.99H5.02L17.8 19.9Z' }
 ];
 function renderSocials(content) {
   const links = document.createElement('div'); links.className = 'social-links';
@@ -46,11 +46,22 @@ function renderSocials(content) {
       valid = url.protocol === 'https:' && [profile.host, 'www.' + profile.host, ...(profile.host === 'x.com' ? ['twitter.com', 'www.twitter.com'] : [])].includes(url.hostname);
     } catch {}
     const link = document.createElement(valid ? 'a' : 'span');
-    link.className = 'social-link'; link.textContent = profile.name + (valid ? ' ↗' : '');
+    link.className = 'social-link';
     if (valid) {
       link.href = profile.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
       link.setAttribute('aria-label', profile.name + ' profile (opens in a new tab)');
     }
+    const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    icon.setAttribute('viewBox', '0 0 24 24');
+    icon.setAttribute('class', 'social-icon');
+    icon.setAttribute('aria-hidden', 'true');
+    icon.setAttribute('focusable', 'false');
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', profile.icon);
+    icon.append(path);
+    const label = document.createElement('span'); label.textContent = profile.name;
+    const arrow = document.createElement('span'); arrow.className = 'social-arrow'; arrow.setAttribute('aria-hidden', 'true'); arrow.textContent = '↗';
+    link.append(icon, label, arrow);
     links.append(link);
   });
   content.append(links);
